@@ -8,8 +8,13 @@
       class="form-control"
       ngModel
       required
+      #nameCtrl="ngModel"
     />
+    <span class="help-block" *ngIf="nameCtrl.invalid && nameCtrl.touched"
+      >This field is required</span
+    >
   </div>
+  <br />
   <div class="form-group">
     <label for="img">Project's Background Image:</label>
     <input
@@ -20,8 +25,13 @@
       class="form-control"
       ngModel
       required
+      #imgCtrl="ngModel"
     />
+    <span class="help-block" *ngIf="imgCtrl.invalid && imgCtrl.touched"
+      >This field is required</span
+    >
   </div>
+  <br />
   <div class="form-group"></div>
   <div>
     <label for="data">Log File:</label>
@@ -33,8 +43,13 @@
       class="form-control"
       ngModel
       required
+      #dataCtrl="ngModel"
     />
+    <span class="help-block" *ngIf="dataCtrl.invalid && dataCtrl.touched"
+      >This field is required</span
+    >
   </div>
+  <br />
   <div>
     <label for="Unit">Unit (in square meters):</label>
     <input
@@ -45,8 +60,14 @@
       class="form-control"
       ngModel
       required
+      #unitCtrl="ngModel"
     />
+    <span class="help-block" *ngIf="unitCtrl.invalid && unitCtrl.touched"
+      >This field is required</span
+    >
   </div>
   <br />
-  <button class="btn btn-primary" type="submit">Create Project</button>
+  <button class="btn btn-primary" type="submit" [disabled]="form.invalid">
+    Create Project
+  </button>
 </form>
