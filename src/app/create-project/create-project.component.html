@@ -1,0 +1,52 @@
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <div class="form-group">
+    <label for="projectName">Project Title</label>
+    <input
+      type="text"
+      id="projectName"
+      name="projectName"
+      class="form-control"
+      ngModel
+      required
+    />
+  </div>
+  <div class="form-group">
+    <label for="img">Project's Background Image:</label>
+    <input
+      type="file"
+      id="img"
+      name="img"
+      accept="image/png, image/jpeg"
+      class="form-control"
+      ngModel
+      required
+    />
+  </div>
+  <div class="form-group"></div>
+  <div>
+    <label for="data">Log File:</label>
+    <input
+      type="file"
+      id="data"
+      name="data"
+      accept=".csv, .txt"
+      class="form-control"
+      ngModel
+      required
+    />
+  </div>
+  <div>
+    <label for="Unit">Unit (in square meters):</label>
+    <input
+      (keypress)="numberOnly($event)"
+      type="text"
+      id="Unit"
+      name="Unit"
+      class="form-control"
+      ngModel
+      required
+    />
+  </div>
+  <br />
+  <button class="btn btn-primary" type="submit">Create Project</button>
+</form>
