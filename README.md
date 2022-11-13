@@ -1,7 +1,6 @@
 # Recreating virtual manufacturing project using Angular and TypeScript
 
 Yet, We can create new project Items and add them to the projects list, as well as insuring that the inputs are validated.
-![Screenshot (108)](https://user-images.githubusercontent.com/97854234/201528440-c0e40540-62bf-4d86-b79d-d538ab6adde1.png)
 
 Note: the project is still ongoing project
 
