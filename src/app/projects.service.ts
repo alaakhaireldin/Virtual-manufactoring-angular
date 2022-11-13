@@ -1,13 +1,13 @@
 export class ProjectService {
   projects = [
     {
-      projectTitle: 'East coast',
+      projectTitle: 'Default Project Title 1',
       projectBackgroundImage: 'Image link 1',
       logFile: 'Log file link 1',
       unit: 12,
     },
     {
-      projectTitle: 'East coast2',
+      projectTitle: 'Default Project Title 2',
       projectBackgroundImage: 'Image link 2',
       logFile: 'Log file link 2',
       unit: 4,
