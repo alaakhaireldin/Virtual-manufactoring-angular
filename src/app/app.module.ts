@@ -8,6 +8,8 @@ import { ItemComponent } from './item/item.component';
 import { ProjectService } from './projects.service';
 import { CreateProjectComponent } from './create-project/create-project.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { FormsModule } from '@angular/forms';
     ListComponent,
     ItemComponent,
     CreateProjectComponent,
+    HeaderComponent,
+    NavbarComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [ProjectService],
